@@ -102,7 +102,7 @@ class Predictor(BasePredictor):
     @torch.inference_mode()
     def predict(
         self,
-        prompt: str = Input(description="Input prompt", default="A small cactus with a happy face in the Sahara desert"),
+        prompt: str = Input(description="Input prompt", default="A cat doing karate in Madrid, cinematic, 8k UHD"),
         negative_prompt: str = Input(description="Negative prompt", default=None),
         modelChoice: str = Input(
             description="Pixart model to use",
